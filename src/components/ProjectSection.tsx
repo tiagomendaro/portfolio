@@ -12,6 +12,7 @@ interface ProjectSectionProps {
   images: string[];
   isReverse?: boolean;
   note?: string;
+  liveUrl?: string;
 }
 
 const ProjectSection = ({
@@ -23,7 +24,8 @@ const ProjectSection = ({
   features,
   images,
   isReverse = false,
-  note
+  note,
+  liveUrl
 }: ProjectSectionProps) => {
   return (
     <section id={id} className={`project-section ${isReverse ? 'reverse' : ''}`}>
@@ -38,6 +40,16 @@ const ProjectSection = ({
           <div className="project-header">
             <h2 className="project-title">{title}</h2>
             <p className="project-subtitle">{subtitle}</p>
+            {liveUrl && (
+              <a 
+                href={liveUrl} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="live-link"
+              >
+                View Live Site →
+              </a>
+            )}
           </div>
 
           <p className="project-description">{description}</p>

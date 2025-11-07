@@ -142,6 +142,30 @@
   width: 100%;
 }
 
+.live-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  padding: 0.6rem 1.5rem;
+  background: rgba(59, 130, 246, 0.1);
+  border: 2px solid var(--primary);
+  color: var(--primary-light);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  letter-spacing: 0.02em;
+}
+
+.live-link:hover {
+  background: var(--primary);
+  color: #ffffff;
+  transform: translateX(5px);
+  box-shadow: 0 5px 20px rgba(59, 130, 246, 0.4);
+}
+
 /* Responsive */
 @media (max-width: 1024px) {
   .project-container {

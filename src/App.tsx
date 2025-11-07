@@ -13,6 +13,7 @@ function App() {
         title="Repstly"
         subtitle="AI Virtual Assistants SaaS Platform"
         description="A comprehensive SaaS platform that enables businesses to create and manage AI-powered virtual assistants for customer service. Users can configure assistants with custom voices, assign phone numbers, manage services, and monitor calls in real-time."
+        liveUrl="https://repstly.com"
         technologies={[
           'Next.js 14',
           'TypeScript',
