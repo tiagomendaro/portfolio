@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Font Tokyo local */
+@font-face {
+  font-family: 'Tokyo';
+  src: url('./assets/fonts/Tokyo.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --primary: #3b82f6;
+  --primary-light: #60a5fa;
+  --secondary: #8b5cf6;
+  --accent: #06b6d4;
+  --dark-bg: #0a0e27;
+  --darker-bg: #050814;
+  --card-bg: #1a1f3a;
+  --card-hover: #252b4a;
+  --text-primary: #f1f5f9;
+  --text-secondary: #94a3b8;
+  --border-glow: rgba(59, 130, 246, 0.3);
+  --font-tokyo: 'Tokyo', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--dark-bg);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-body);
+}
+
+::selection {
+  background: var(--primary);
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--darker-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-light);
+}
