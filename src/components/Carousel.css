@@ -30,15 +30,14 @@
   background: var(--darker-bg);
 }
 
-/* Ajuste especial para imágenes verticales (formato móvil) */
 @media (max-width: 768px) {
   .carousel-container {
-    aspect-ratio: 9 / 16; /* Cambia a formato vertical en móvil */
-    max-height: 70vh; /* Limita la altura para que no ocupe toda la pantalla */
+    aspect-ratio: 9 / 16; 
+    max-height: 70vh;
   }
 
   .carousel-image {
-    object-fit: cover; /* Cubre todo el espacio en móvil */
+    object-fit: cover; 
   }
 }
 

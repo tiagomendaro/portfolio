@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
-/* Font Tokyo local */
 @font-face {
   font-family: 'Tokyo';
   src: url('./assets/fonts/Tokyo.ttf') format('truetype');
